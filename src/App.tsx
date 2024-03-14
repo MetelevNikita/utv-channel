@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from 'react'
 
-function App() {
+// css
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+
+//
+
+import { Container } from 'react-bootstrap'
+import { Routes, Route } from 'react-router-dom';
+
+// components
+
+import Header from  './components/Header'
+import Social from './components/Social';
+
+
+const App = () => {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+
+        <Header />
+        <Social />
+
+        <Routes>
+
+
+
+
+
+
+        </Routes>
+
+
+
+
+      </Container>
     </div>
-  );
+
+  )
 }
 
-export default App;
+export default App
